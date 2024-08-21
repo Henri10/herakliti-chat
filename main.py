@@ -23,7 +23,7 @@ class ChatCompletionsConfig(BaseModel):
     stream: bool = False
     temperature: Union[float, None] = None
     max_tokens: Union[int, None] = None
-    stop: Union[list[str], str, None] = None
+    stop: Union[List[str], str, None] = None
     api_key: Union[str, None] = None
 
 class Api:
