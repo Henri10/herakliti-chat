@@ -159,7 +159,7 @@ def run_api(host: str = '0.0.0.0', port: int = 1337, debug: bool = False, use_co
     # Enable CORS for all origins
     app.app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://localhost:5173", "http://192.168.1.46:8000"],  # Allow requests from any origin
+        allow_origins=["http://localhost:5173", "http://192.168.1.44:5173"],  # Allow requests from any origin
         allow_credentials=True,
         allow_methods=["*"],  # Allow all HTTP methods
         allow_headers=["*"],  # Allow all headers
